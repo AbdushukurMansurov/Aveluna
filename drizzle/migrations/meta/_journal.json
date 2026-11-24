@@ -1,0 +1,55 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1794567160946,
+      "tag": "0000_healthcare_core_and_mvp_modules",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1794567194587,
+      "tag": "0001_add_fifteen_pharmacies",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1794751748579,
+      "tag": "0002_add_admin_role",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1794751775889,
+      "tag": "0003_staff_assignments_and_stock_adjust",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1794751997636,
+      "tag": "0004_service_role_user_roles",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1795096597051,
+      "tag": "0005_harden_rls",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1795265624285,
+      "tag": "0006_harden_healthcare_mutations",
+      "breakpoints": true
+    }
+  ]
+}

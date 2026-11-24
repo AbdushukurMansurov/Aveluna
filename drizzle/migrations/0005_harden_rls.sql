@@ -1,0 +1,10 @@
+DROP POLICY IF EXISTS "Pharmacists manage medicines" ON public.medicines;
+CREATE POLICY "Admins manage medicines" ON public.medicines FOR ALL TO authenticated USING (public.has_role(auth.uid(),'admin')) WITH CHECK (public.has_role(auth.uid(),'admin'));
+DROP POLICY IF EXISTS "Pharmacists add own pharmacy" ON public.pharmacies;
+DROP POLICY IF EXISTS "Owners update pharmacy" ON public.pharmacies;
+DROP POLICY IF EXISTS "Owners delete pharmacy" ON public.pharmacies;
+CREATE POLICY "Admins manage pharmacies" ON public.pharmacies FOR ALL TO authenticated USING (public.has_role(auth.uid(),'admin')) WITH CHECK (public.has_role(auth.uid(),'admin'));
+DROP POLICY IF EXISTS "Pharmacists manage stock" ON public.pharmacy_stock;
+CREATE POLICY "Admins manage stock" ON public.pharmacy_stock FOR ALL TO authenticated USING (public.has_role(auth.uid(),'admin')) WITH CHECK (public.has_role(auth.uid(),'admin'));
+CREATE POLICY "Admins manage prescriptions" ON public.prescriptions FOR ALL TO authenticated USING (public.has_role(auth.uid(),'admin')) WITH CHECK (public.has_role(auth.uid(),'admin'));
+CREATE POLICY "Admins view roles" ON public.user_roles FOR SELECT TO authenticated USING (public.has_role(auth.uid(),'admin'));

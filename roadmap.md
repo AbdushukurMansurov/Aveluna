@@ -1,0 +1,4 @@
+- [ ] Replace AI/DOM translation with a synchronous four-language dictionary.
+- [ ] Translate all public pages, dashboards, menus, filters, map popups, receipts, and messages.
+- [ ] Synchronize the browser tab title with language and route.
+- [ ] Verify main screens and remove obsolete translation code.
